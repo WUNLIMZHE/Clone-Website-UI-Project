@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Merchandise | CS Society USM
+    </title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar" style="background-color: #103F45;">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href=index.html style="cursor: pointer;"><img src="./assets/logo.svg" alt="logo" height="80px"/></a>
+          <p class="header" style="cursor: pointer;">USM CS Society<br />Merchandise</p></a>
+        </div>
+        <div style="border-radius: 40%;">
+          <button type="button" class="btn btn-warning cart-button" style="height: 50px; width: 130px;">
+            <img src="./assets/grocery-store.png" alt="cart" height="30px" />
+            <P class="cart-info">CART (0)</P>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="notification-container">
+        <div class="notification">
+          <img class="sold-notification-icon" src="./assets/cross-notification.svg" alt="sold notification"/>
+        </div>
+        <div>
+          <p>
+            We are <span style="font-weight:bolder;">not accepting new orders</span> at this time.
+            <br />Thank you for your support!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="promotion-container">
+      <div class="promotion-discription">
+        <p class="promotion-1">Don't miss out on the one and only CS Society Merch.</p>
+        <p class="promotion-2" left-pointer="true">Preorder now! See our packages for additional savings👉</p>
+        <p class="promotion-2" bottom-pointer="false">Preorder now! See our packages for additional savings👇</p>
+      </div>
+      <div class="promotion-button-container" style="border-radius: 40%; " >
+        <!-- Button trigger modal -->
+        <button type="button" class="btn promotion-button" data-bs-toggle="modal" data-bs-target="#promotion-label" style="height: 67px; width: 170px; background-color: #ffd92d; border-radius: 10px;">
+          <img src="./assets/gift-fill.svg" alt="cart" height="30px" />
+          <P class="package-button" style="display: inline; font-weight:700; padding-left: 10px;">Packages</p>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade modal-lg" id="promotion-label" tabindex="-1" aria-labelledby="PromotionLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header" style="border:none">
+                <p class="modal-title" id="PromotionLabel">Packages</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="promotion-modal-body">
+                <div class="promotion-detail promotion-variable">Package</div>
+                <div class="promotion-detail promotion-variable">Original Price</div>
+                <div class="promotion-detail promotion-variable">Discount</div>
+                <div class="promotion-detail promotion-variable">Price</div>
+                <div class="promotion-detail">T-Shirt + Tote Bag</div>
+                <div class="promotion-detail">RM46.00</div>
+                <div class="promotion-detail">-RM6.00</div>
+                <div class="promotion-detail">RM40.00</div>
+                <div class="promotion-detail">T-Shirt + Thermos</div>
+                <div class="promotion-detail">RM58.00</div>
+                <div class="promotion-detail">-RM3.00</div>
+                <div class="promotion-detail">RM55.00</div>
+                <div class="promotion-detail">T-Shirt + Varsity Jacket</div>
+                <div class="promotion-detail">RM104.00</div>
+                <div class="promotion-detail">-RM5.00</div>
+                <div class="promotion-detail">RM99.00</div>
+                <div class="promotion-detail">T-Shirt + Varsity Jacket + Tote Bag + Thermos</div>
+                <div class="promotion-detail">RM150.00</div>
+                <div class="promotion-detail">-RM11.00</div>
+                <div class="promotion-detail">RM139.00</div>
+              </div>
+
+              <div class="modal-body" id="simpler-promotion-modal-body">
+                <div class="promotion-detail promotion-variable">Package</div>
+                <div class="promotion-detail promotion-variable">Price</div>
+                <div class="promotion-detail">T-Shirt + Tote Bag</div>
+                <div class="promotion-detail"><span class="text-decoration-line-through">RM46.00</span><br/>RM40.00</div>
+                <div class="promotion-detail">T-Shirt + Thermos</div>
+                <div class="promotion-detail"><span class="text-decoration-line-through">RM58.00</span><br/>RM55.00</div>
+                <div class="promotion-detail">T-Shirt + Varsity Jacket</div>
+                <div class="promotion-detail"><span class="text-decoration-line-through">RM104.00</span><br/>RM99.00</div>
+                <div class="promotion-detail">T-Shirt + Varsity Jacket + Tote Bag + Thermos</div>
+                <div class="promotion-detail"><span class="text-decoration-line-through">RM150.00</span><br/>RM139.00</div>
+              </div>
+
+              <div class="promotion-notification">
+                <p>* The same discount applies to any of the above combination with Long Sleeve T-Shirt.</p>
+                <p>* Discount will be calculated and applied automatically.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-container">
+      <!-- t-shirt item -->
+      <div class="pricing-plan">
+        <div class="plan-title">
+          <div id="item-1" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#item-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#item-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/tshirt-tss-front.webp" class="d-block w-100 item-img" alt="tshirt front design">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/tshirt-tss-back.png" class="d-block w-100 item-img" alt="tshirt back design">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#item-1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#item-1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="item-name">Short Sleeve T-Shirt</div>
+        <ul class="item-info">
+          <li>RM 29.00</li>
+          <li>Beige in color, made for everyone.</li>
+        </ul>
+        <div class="item-detail mt-3">
+          <div class="item-size">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e6e6e6">
+                SIZE
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">2XS</a></li>
+                <li><a class="dropdown-item" href="#">XS</a></li>
+                <li><a class="dropdown-item" href="#">S</a></li>
+                <li><a class="dropdown-item" href="#">M</a></li>
+                <li><a class="dropdown-item" href="#">L</a></li>
+                <li><a class="dropdown-item" href="#">XL</a></li>
+                <li><a class="dropdown-item" href="#">2XL</a></li>
+                <li><a class="dropdown-item" href="#">3XL</a></li>
+                <li><a class="dropdown-item" href="#">4XL</a></li>
+                <li><a class="dropdown-item" href="#">5XL</a></li>
+              </ul>
+            </div>
+            <div style="align-self: center;">
+              <!-- Button trigger modal -->
+              <p data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: underline; cursor: pointer; font-size: 13px; font-family: Roboto; margin-top: 2px;" >
+                Size Details
+              </p>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title" id="exampleModalLabel">T-Shirt Size Chart</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="shirt-modal-body">
+                      <div class="item-size-detail">SIZE</div>
+                      <div class="item-size-detail">CHEST</div>
+                      <div class="item-size-detail">LENGTH</div>
+                      <div class="item-size-detail short-sleeve">SHORT SLEEVE</div>
+                      <div class="item-size-detail long-sleeve">LONG SLEEVE</div>
+                      <div class="item-size-detail">2XS</div>
+                      <div class="item-size-detail">34"</div>
+                      <div class="item-size-detail">24"</div>
+                      <div class="item-size-detail short-sleeve">7"</div>
+                      <div class="item-size-detail long-sleeve">20.5"</div>
+                      <div class="item-size-detail">XS</div>
+                      <div class="item-size-detail">36"</div>
+                      <div class="item-size-detail">25"</div>
+                      <div class="item-size-detail short-sleeve">7.5"</div>
+                      <div class="item-size-detail long-sleeve">21"</div>
+                      <div class="item-size-detail">S</div>
+                      <div class="item-size-detail">38"</div>
+                      <div class="item-size-detail">26"</div>
+                      <div class="item-size-detail short-sleeve">8"</div>
+                      <div class="item-size-detail long-sleeve">21.5"</div>
+                      <div class="item-size-detail">M</div>
+                      <div class="item-size-detail">40"</div>
+                      <div class="item-size-detail">27"</div>
+                      <div class="item-size-detail short-sleeve">8.5"</div>
+                      <div class="item-size-detail long-sleeve">22"</div>
+                      <div class="item-size-detail">L</div>
+                      <div class="item-size-detail">42"</div>
+                      <div class="item-size-detail">28"</div>
+                      <div class="item-size-detail short-sleeve">9"</div>
+                      <div class="item-size-detail long-sleeve">22.5"</div>
+                      <div class="item-size-detail">XL</div>
+                      <div class="item-size-detail">44"</div>
+                      <div class="item-size-detail">29"</div>
+                      <div class="item-size-detail short-sleeve">9.5"</div>
+                      <div class="item-size-detail long-sleeve">23"</div>
+                      <div class="item-size-detail">2XL</div>
+                      <div class="item-size-detail">46"</div>
+                      <div class="item-size-detail">30"</div>
+                      <div class="item-size-detail short-sleeve">10"</div>
+                      <div class="item-size-detail long-sleeve">23.5"</div>
+                      <div class="item-size-detail">3XL</div>
+                      <div class="item-size-detail">48"</div>
+                      <div class="item-size-detail">31"</div>
+                      <div class="item-size-detail short-sleeve">10.5"</div>
+                      <div class="item-size-detail long-sleeve">24"</div>
+                      <div class="item-size-detail">4XL</div>
+                      <div class="item-size-detail">50"</div>
+                      <div class="item-size-detail">32"</div>
+                      <div class="item-size-detail short-sleeve">11"</div>
+                      <div class="item-size-detail long-sleeve">24.5"</div>
+                      <div class="item-size-detail">5XL</div>
+                      <div class="item-size-detail">52"</div>
+                      <div class="item-size-detail">33"</div>
+                      <div class="item-size-detail short-sleeve">11.5"</div>
+                      <div class="item-size-detail long-sleeve">25"</div>
+                    </div>
+                    <div class="disclaimer">
+                      <p>Note: Measurement may vary +/-5% from actual product.</p>
+                      <p>* RJPK 180gsm | Full sublimation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-purchase" style="margin-bottom: 22px;">
+            <button type="button" class="btn" style="background-color: #d1d2d3; cursor:not-allowed;"><span style="color: 
+              #afb0b1;">&#128683; Unavailable</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- long shirt item -->
+      <div class="pricing-plan">
+        <div class="plan-title">
+          <div id="item-2" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#item-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#item-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/tshirt-tls-front.webp" class="d-block w-100 img" alt="tshirt front design">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/tshirt-tls-back.webp" class="d-block w-100 img" alt="tshirt back design">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#item-2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#item-2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="item-name">Long Sleeve T-Shirt</div>
+        <ul class="item-info">
+          <li>RM 34.00</li>
+          <li>Beige in color, made for everyone.</li>
+        </ul>
+        <div class="item-detail mt-3">
+          <div class="item-size">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e6e6e6">
+                SIZE
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">2XS</a></li>
+                <li><a class="dropdown-item" href="#">XS</a></li>
+                <li><a class="dropdown-item" href="#">S</a></li>
+                <li><a class="dropdown-item" href="#">M</a></li>
+                <li><a class="dropdown-item" href="#">L</a></li>
+                <li><a class="dropdown-item" href="#">XL</a></li>
+                <li><a class="dropdown-item" href="#">2XL</a></li>
+                <li><a class="dropdown-item" href="#">3XL</a></li>
+                <li><a class="dropdown-item" href="#">4XL</a></li>
+                <li><a class="dropdown-item" href="#">5XL</a></li>
+              </ul>
+            </div>
+            <div style="align-self: center;">
+              <!-- Button trigger modal -->
+              <p data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: underline; cursor: pointer; font-size: 13px; font-family: Roboto; margin-top: 2px; vertical-align: middle;" >
+                Size Details
+              </p>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-purchase" style="margin-bottom: 22px;">
+            <button type="button" class="btn" style="background-color: #d1d2d3; cursor:not-allowed;"><span style="color: 
+              #afb0b1;">&#128683; Unavailable</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- jacket item -->
+      <div class="pricing-plan">
+        <div class="plan-title">
+          <div id="item-3" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#item-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#item-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/jacket-front.webp" class="d-block w-100 img" alt="tshirt front design">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/jacket-back.webp" class="d-block w-100 img" alt="tshirt back design">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#item-3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#item-3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="item-name">Varsity Jacket</div>
+        <ul class="item-info">
+          <li>RM 75.00</li>
+          <li>A versatile wardrobe essential.</li>
+        </ul>
+        <div class="item-detail mt-3">
+          <div class="item-size">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e6e6e6">
+                SIZE
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">XS</a></li>
+                <li><a class="dropdown-item" href="#">S</a></li>
+                <li><a class="dropdown-item" href="#">M</a></li>
+                <li><a class="dropdown-item" href="#">L</a></li>
+                <li><a class="dropdown-item" href="#">XL</a></li>
+                <li><a class="dropdown-item" href="#">XXL</a></li>
+              </ul>
+            </div>
+            <div style="align-self: center;">
+              <!-- Button trigger modal -->
+              <p data-bs-toggle="modal" data-bs-target="#jacket-label" style="text-decoration: underline; cursor: pointer; font-size: 13px; font-family: Roboto; margin-top: 2px; vertical-align: middle;" >
+                Size Details
+              </p>
+
+              <!-- Modal -->
+              <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title" id="exampleModalLabel">T-Shirt Size Chart</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"> -->
+
+              <div class="modal fade" id="jacket-label" tabindex="-1" aria-labelledby="JacketModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title" id="JacketModalLabel">Varsity Jacket Size Chart</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="jacket-modal-body">
+                      <div class="item-size-detail">SIZE</div>
+                      <div class="item-size-detail">WIDTH</div>
+                      <div class="item-size-detail">LENGTH</div>
+                      <div class="item-size-detail short-sleeve">SHOULDER</div>
+                      <div class="item-size-detail long-sleeve">SLEEVE</div>
+                      <div class="item-size-detail">S</div>
+                      <div class="item-size-detail">20"</div>
+                      <div class="item-size-detail">26.5"</div>
+                      <div class="item-size-detail short-sleeve">18"</div>
+                      <div class="item-size-detail long-sleeve">23.5"</div>
+                      <div class="item-size-detail">M</div>
+                      <div class="item-size-detail">21"</div>
+                      <div class="item-size-detail">27.5"</div>
+                      <div class="item-size-detail short-sleeve">19"</div>
+                      <div class="item-size-detail long-sleeve">24"</div>
+                      <div class="item-size-detail">L</div>
+                      <div class="item-size-detail">22"</div>
+                      <div class="item-size-detail">28.5"</div>
+                      <div class="item-size-detail short-sleeve">20"</div>
+                      <div class="item-size-detail long-sleeve">24.5"</div>
+                      <div class="item-size-detail">XL</div>
+                      <div class="item-size-detail">23"</div>
+                      <div class="item-size-detail">29.5"</div>
+                      <div class="item-size-detail short-sleeve">21"</div>
+                      <div class="item-size-detail long-sleeve">25"</div>
+                      <div class="item-size-detail">2XL</div>
+                      <div class="item-size-detail">24"</div>
+                      <div class="item-size-detail">30.5"</div>
+                      <div class="item-size-detail short-sleeve">22"</div>
+                      <div class="item-size-detail long-sleeve">25.5"</div>
+                      <div class="item-size-detail">3XL</div>
+                      <div class="item-size-detail">25"</div>
+                      <div class="item-size-detail">31.5"</div>
+                      <div class="item-size-detail short-sleeve">23"</div>
+                      <div class="item-size-detail long-sleeve">26"</div>
+                    </div>
+                    <div class="disclaimer">
+                      <p>Note: Measurement may vary +/-5% from actual product.</p>
+                      <p>* 60% Cotton 40% Polyester CVC FLeece</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Scrollable modal
+              <div class="modal-dialog modal-dialog-scrollable">
+                ...
+              </div> -->
+            </div>
+          </div>
+          <div class="item-purchase">
+            <button type="button" class="btn" style="background-color: #d1d2d3"><span style="color: 
+              #afb0b1;">&#128683; Unavailable</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tote Bag item -->
+      <div class="pricing-plan">
+        <div class="plan-title">
+          <div id="item-4" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#item-4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#item-4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/tote-bag-white.webp" class="d-block w-100 img" alt="tshirt front design">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/tote-bag-black.webp" class="d-block w-100 img" alt="tshirt back design">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#item-4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#item-4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="item-name">Tote Bag</div>
+        <ul class="item-info">
+          <li>RM 29.00</li>
+          <li>Beige in color, made for everyone.</li>
+        </ul>
+        <div class="item-detail mt-3">
+          <div class="item-size">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e6e6e6">
+                COLOUR
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">White</a></li>
+                <li><a class="dropdown-item" href="#">Black</a></li>
+              </ul>
+            </div>
+            <div style="align-self: center;">
+              <!-- Button trigger modal -->
+              <p data-bs-toggle="modal" data-bs-target="#toteBag-label" style="text-decoration: underline; cursor: pointer; font-size: 13px; font-family: Roboto; margin-top: 2px; vertical-align: middle;" >
+                Item Details
+              </p>
+
+              <!-- Modal -->
+              <div class="modal fade" id="toteBag-label" tabindex="-1" aria-labelledby="ToteBagModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title" id="ToteBagModalLabel">Tote Bag Details</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="toteBag-modal-body">
+                      <div class="item-size-detail">Material</div>
+                      <div class="item-size-detail">Dimension</div>
+                      <div class="item-size-detail">Canvas</div>
+                      <div class="item-size-detail">40cm x 35cm</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Scrollable modal
+              <div class="modal-dialog modal-dialog-scrollable">
+                ...
+              </div> -->
+            </div>
+          </div>
+          <div class="item-purchase">
+            <button type="button" class="btn" style="background-color: #d1d2d3"><span style="color: 
+              #afb0b1;">&#128683; Unavailable</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thermos item -->
+      <div class="pricing-plan">
+        <div class="plan-title">
+          <div id="item-5" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#item-5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#item-5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/thermos-white.webp" class="d-block w-100 img" alt="tshirt front design">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/thermos-black.webp" class="d-block w-100 img" alt="tshirt back design">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#item-5" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#item-5" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- text-bg-info  -->
+        <div class="item-name">Thermos <div class="badge badge-accent rounded-pill" style="color: black; background-color:#1bd2d8; font-weight: lighter; font-size: 0.9rem; margin-left: 10px; vertical-align: middle; padding-top: 2px; padding-bottom: 2px; padding-left: 8px; padding-right: 8px;">CUSTOMIZABLE</div></div>
+        <ul class="item-info">
+          <li>RM 29.00</li>
+          <li>Keep your coffee hot, and water cold.</li>
+        </ul>
+        <div class="item-detail mt-3">
+          <div class="item-size">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e6e6e6">
+                COLOUR
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Black</a></li>
+                <li><a class="dropdown-item" href="#">White</a></li>
+              </ul>
+            </div>
+            <div style="align-self: center;">
+              <!-- Button trigger modal -->
+              <p data-bs-toggle="modal" data-bs-target="#thermos-label" style="text-decoration: underline; cursor: pointer; font-size: 13px; font-family: Roboto; margin-top: 2px; vertical-align: middle;" >
+                Item Details
+              </p>
+
+              <!-- <div class="modal fade" id="jacket-label" tabindex="-1" aria-labelledby="JacketModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title" id="JacketModalLabel">Varsity Jacket Size Chart</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="jacket-modal-body"> -->
+
+              <!-- Modal -->
+              <div class="modal fade" id="thermos-label" tabindex="-1" aria-labelledby="ThermosModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title" id="ThermosModalLabel">Thermos Details</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="thermos-modal-body">
+                      <div class="item-size-detail">Material</div>
+                      <div class="item-size-detail">Capacity</div>
+                      <div class="item-size-detail" remove-margin="true">304 Stainless Steel Liner, Food Grade ABS Plastic</div>
+                      <div class="item-size-detail extra">500 ml</div>
+                      <div class="item-size-detail">Cover, Food Grade Silicone and Food Grade Filter</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Scrollable modal
+              <div class="modal-dialog modal-dialog-scrollable">
+                ...
+              </div> -->
+            </div>
+          </div>
+          <div class="item-purchase">
+            <button type="button" class="btn" style="background-color: #d1d2d3"><span style="color: 
+              #afb0b1;">&#128683; Unavailable</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="illustrative-purpose">** All pictures shown are for illustration purposes only. Actual product may vary due to product enhancement.</p>
+
+    <div class="footer mt-4">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+        <div class="col-md-8 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 ms-3" style="color: white; font-size: 15px;">Copyright © 2023 - 2024 Computer Science Society, USM</span>
+        </div>
+    
+        <ul class="nav col-md-3 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://cssocietyusm.com/" target="_blank"><img src="./assets/website-icon.svg" alt="website icon"/></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/cs.usm/" target="_blank"><img src="./assets/instagram-icon.svg" alt="instagram icon"/></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/company/cssocietyusm/" target="_blank"><img src="./assets/linkedln-icon.svg" alt="Linkedln icon"/></a></li>
+          <li class="ms-3 me-4"><a class="text-body-secondary" href="https://www.facebook.com/cs.usm.my/" target="_blank"><img src="./assets/facebook-icon.svg" alt="Facebook icon"/></a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

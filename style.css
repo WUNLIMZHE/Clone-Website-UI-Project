@@ -1,0 +1,539 @@
+html {
+  font-family: Roboto,system-ui,sans-serif;
+  background-color:#f4f4f4;
+}
+
+body{
+  background-color:#f4f4f4;
+}
+
+.header{
+  color: white;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 400;
+  align-self: center;
+  vertical-align: middle;
+  font-family: Bebas Neue,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+.logo{
+  display: flex;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  gap: 20px;
+}
+
+.container{
+  width: 80%;
+  justify-content: center;
+}
+
+.cart-info{
+  display: inline;
+  padding-left: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+  font-family: Bebas Neue,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+.container{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+
+.notification-container{
+  display: flex;
+  gap: 1rem;
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #ff5861;
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 2px 5px 5px black;
+}
+
+.notification{
+  margin-left: 10px;
+  align-self: center;
+}
+
+.notification-container > div > p{
+  margin: 0;
+}
+
+.sold-nitification-icon{
+  padding-left: 0;
+}
+
+.sold-nitification{
+  padding-right: 10px;
+}
+
+.notification > p{
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  color: black;
+  margin: 0;
+}
+
+@media (max-width: 639px){
+  .notification-container{
+    flex-direction: column;
+  }
+
+  .notification-container > div{
+    align-self: center;
+  }
+
+  .notification-container > div > p{
+    text-align: center;
+  }
+}
+
+.promotion-container{
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: 10%;
+  margin-right: 8%;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 30px;
+}
+
+.promotion-button-container{
+  align-self: center;
+}
+
+.promotion-discription > p{
+  margin: 0;
+}
+
+.promotion-1{
+  font-weight: bolder;
+  font-size: calc(0.9rem + 1.2vw);
+}
+
+.promotion-2{
+  font-size: 1.1rem;
+}
+
+.promotion-2[left-pointer="true"] {
+  font-size: 1.1rem;
+  display: block;
+}
+
+.promotion-2[bottom-pointer="false"] {
+  display: none; /* Hide the left-pointer version */
+}
+
+@media (min-width: 993px) and (max-width: 1080px) {
+  .promotion-1{
+    font-weight: bolder;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .promotion-container{
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .promotion-button-container{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+  }
+
+  .promotion-1, .promotion-2{
+    margin: 0;
+    text-align: center;
+  }
+
+  .promotion-1{
+    font-weight: bolder;
+    font-size: 100%;
+    font-size: calc(0.9rem + 1.5vw);
+  }
+
+  .promotion-2{
+    padding-bottom: 20px;
+  }
+
+  .promotion-2[left-pointer="true"] {
+    display: none; /* Hide the left-pointer version */
+  }
+
+  .promotion-2[bottom-pointer="false"] {
+    font-size: 1.1rem;
+    display: block;
+  }
+}
+
+.promotion-container{
+  font-family: Roboto, sans-serif;
+}
+--------------------------------------
+
+.modal-content{
+  display: flex;
+  justify-content: center;
+}
+
+.promotion-information{
+  display: flex;
+  height: 55vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body{
+  padding: 2px !important;
+}
+
+#promotion-modal-body{
+  align-self: center;
+  font-family: Roboto, sans-serif;
+  font-size: calc(0.1rem + 1.2vw);
+  color:black;
+  display: grid;
+  max-width: 700px;
+  background-color: #edeff1;
+  gap: 2px;
+  grid-template-columns: 2.2fr 1.15fr 0.9fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+}
+
+#simpler-promotion-modal-body{
+  display: none; /* Hide the left-pointer version */
+}
+
+.promotion-detail{
+  color: #5f5f5f;
+  background-color: white;
+  padding-bottom: 2px;
+}
+
+.promotion-notification{
+  margin-top: 10px;
+  font-size: 10px;
+  display: flexbox;
+  align-self: flex-end;
+}
+
+.promotion-notification > p{
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  text-align: right;
+  font-size: calc(0.07rem + 1.1vw);
+  font-style: italic;
+}
+
+@media (max-width: 966px){
+  #promotion-modal-body{
+    font-size: 14.8px;
+  }
+
+  .promotion-notification > p{
+    font-size: 11.8px;
+  }
+}
+
+@media (max-width: 639px){
+  #promotion-modal-body{
+    font-size: 14.8px;
+  }
+
+  .promotion-notification > p{
+    font-size: 11.8px;
+  }
+
+  #simpler-promotion-modal-body{
+    display: grid;
+    align-self: center;
+    font-family: Roboto, sans-serif;
+    font-size: calc(0.5rem + 1.2vw);
+    color:black;
+    display: grid;
+    max-width: 700px;
+    background-color: #edeff1;
+    gap: 2px;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+  }
+
+  #promotion-modal-body{
+    display: none;
+  }
+}
+
+.promotion-variable{
+  color: #7c7c7c;
+  font-weight:650;
+  background-color: #e2e8f0;
+}
+
+#PromotionLabel{
+  font-size: 35px;
+  color: #545454;
+  font-weight: bold;
+  text-align:center;
+  flex-basis: 800px;
+  align-self: center;
+  height: 52.5px;
+}
+
+.package-button{
+  font-family: Roboto, sans-serif;
+}
+-------------------
+.row-1{
+  justify-content:center;
+}
+
+.pricing-plan{
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.plan-title, .plan-price{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-title{
+  font-size: 24px;
+}
+
+.item-name, .item-info{
+  text-align: start;
+  font-family: Roboto, sans-serif;
+}
+
+.item-name{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.item-info{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-info > li{
+  list-style: none;
+  margin-top: 5px;
+}
+
+.item-detail{
+  display: flex;
+  justify-content: center;
+}
+
+.item-purchase{
+  align-self: center;
+  margin-left: 15px;
+  margin-bottom: 22px;
+}
+
+.modal-dialog{
+  font-family: Roboto,sans-serif;
+}
+
+.disclaimer > p{
+  color: #7c7c7c;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  text-align:initial;
+  margin:0;
+}
+
+#shirt-modal-body{
+  font-size: 13px;
+  font-weight:650;
+  color: #7c7c7c;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr) 1.1fr repeat(4, 0.7fr);
+  grid-template-rows: repeat(12, 1fr);
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+#jacket-modal-body{
+  font-size: 13px;
+  font-weight:650;
+  color: #7c7c7c;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, 0.8fr) 1.1fr repeat(4, 0.5fr);
+  grid-template-rows: repeat(8, 1fr);
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+#toteBag-modal-body{
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight:650;
+  color: #7c7c7c;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 20px;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+#thermos-modal-body{
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight:650;
+  color: #7c7c7c;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 0.4fr repeat(2, 1fr);
+  margin-left: 20px;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+#JacketModalLabel{
+  font-size: 30px;
+  color: #545454;
+  font-weight: bold;
+  text-align:center;
+  margin-left: 50px;
+}
+
+#exampleModalLabel{
+  font-size: 30px;
+  color: #545454;
+  font-weight: bold;
+  text-align:center;
+  margin-left: 110px;
+}
+
+#ToteBagModalLabel{
+  font-size: 30px;
+  color: #545454;
+  font-weight: bold;
+  text-align:center;
+  margin-left: 110px;
+}
+
+#ThermosModalLabel{
+  font-size: 30px;
+  color: #545454;
+  font-weight: bold;
+  text-align:center;
+  margin-left: 110px;
+}
+
+.short-sleeve, .long-sleeve{
+  grid-column: span 2;
+}
+
+.item-size-detail[remove-margin="true"]{
+  margin: 0;
+}
+
+.extra{
+  grid-row: span 2;
+}
+
+.item-size-detail{
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.modal-header{
+  display: block;
+}
+
+.row-2{
+  margin-top: 30px;
+  margin-left: 202px;
+}
+
+@media (min-width: 1025px){
+  .pricing-container{
+    display: grid;
+    gap: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .pricing-container{
+    display: grid;
+    gap: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/* Hint: What can you do with a media query and flexbox? */
+@media (min-width: 319px) and (max-width: 766px){
+  .pricing-container{
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+    justify-content: center;
+  }
+  .pricing-plan{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.illustrative-purpose{
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7c7c7c;
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.footer{
+  background-color: #142628;
+}
+
+svg {
+  color: white;
+  stroke: currentColor;
+}
+
